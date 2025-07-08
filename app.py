@@ -10,7 +10,7 @@ import datetime
 import io
 
 # ------------------ Streamlit Setup ------------------
-st.set_page_config(page_title="🎭 Face Filter Fun", page_icon="🎩", layout="wide")
+st.set_page_config(page_title="🌽 Face Filter Fun", page_icon="🎩", layout="wide")
 
 st.markdown("""
     <style>
@@ -35,7 +35,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # ------------------ Title ------------------
-st.markdown("<h1 style='text-align:center;'>🎭 Real-Time Face Filter App 🎩</h1>", unsafe_allow_html=True)
+st.markdown("<h1 style='text-align:center;'>🌽 Real-Time Face Filter App 🎩</h1>", unsafe_allow_html=True)
 st.markdown("---")
 
 # ------------------ Load Filters ------------------
@@ -176,11 +176,11 @@ if cap.isOpened():
                     frame = overlay_rgba(frame, pyrate, h_x, h_y, h_w, h_h)
 
                 elif filter_option == "Crown":
-                    x_top, y_top = to_px(10)  # top of forehead
+                    x_top, y_top = to_px(10)
                     c_w = int(face_width * 1.5)
                     c_h = int(c_w * 0.7)
                     c_x = x_top - c_w // 2
-                    c_y = y_top - int(c_h * 1.1)  # raised to fit above head
+                    c_y = y_top - int(c_h * 1.1)
                     frame = overlay_rgba(frame, crown, c_x, c_y, c_w, c_h)
 
         if filter_option == "Grayscale Filter":
