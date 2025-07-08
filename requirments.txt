@@ -1,4 +1,4 @@
---extra-index-url https://piwheels.org/simple
+--extra-index-url https://www.piwheels.org/simple
 
 streamlit
 opencv-python-headless
@@ -6,3 +6,7 @@ mediapipe
 numpy
 qrcode
 Pillow
+libglib2.0-0
+libsm6
+libxrender1
+libxext6
