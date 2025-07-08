@@ -1,0 +1,6 @@
+opencv-python-headless==4.8.0.76
+streamlit
+mediapipe
+numpy
+qrcode
+Pillow

@@ -1,8 +1,0 @@
---extra-index-url https://www.piwheels.org/simple
-
-streamlit
-opencv-python-headless
-mediapipe
-numpy
-qrcode
-Pillow
